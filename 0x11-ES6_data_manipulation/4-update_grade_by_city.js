@@ -1,4 +1,4 @@
-export default function updateStudentGradeByCity(studentList, city, newGrades) {
+function updateStudentGradeByCity(studentList, city, newGrades) {
     return studentList
       .filter((student) => student.location === city)
       .map((student) => {
@@ -9,3 +9,5 @@ export default function updateStudentGradeByCity(studentList, city, newGrades) {
         return { ...student, grade: studentGrade };
       });
   }
+
+export default updateStudentGradeByCity;
