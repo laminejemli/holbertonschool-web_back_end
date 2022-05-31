@@ -1,5 +1,5 @@
-function hasValuesFromArray(set, array) {
-  return array.every((val) => set.has(val));
+function setFromArray(arr) {
+  return new Set(arr);
 }
 
-export default hasValuesFromArray;
+export default setFromArray;
